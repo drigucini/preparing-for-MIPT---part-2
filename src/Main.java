@@ -39,8 +39,6 @@ public class Main {
 //                System.out.print(i + " ");
 //            }
 //        }
-//
-//
 //    }
 
     public static void task3 () {
