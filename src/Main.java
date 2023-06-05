@@ -17,9 +17,9 @@ public class Main {
         task10();
         task11();
         task12();
-        task13();
-        task14();
-        task15();
+//        task13();
+//        task14();
+//        task15();
         task16();
         task17();
         task18();
@@ -41,7 +41,6 @@ public class Main {
 //
 //        for (int i = 0; i < B; i++) {
 //            number *= A;
-//            i++;
 //        }
 //        System.out.println("A in the power of B is " + number);
 //    }
@@ -178,46 +177,85 @@ public class Main {
         System.out.println("\nTask 12");
     }
 
-    public static void task13() {
-        System.out.println("\nTask 13");
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Input n:");
-        int n = scanner.nextInt();
-        int sum = 0;
-
-        for (int i = 0; i <= n; i++) {
-            sum += (1 + 1 / (n * n));
-        }
-        System.out.println(sum);
-    }
-
-    public static void task14() {
-        System.out.println("\nTask 14");
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Input n:");
-        int n = scanner.nextInt();
-        System.out.println("Input x:");
-        int x = scanner.nextInt();
-        int sum1 = 0;
-        int sum2 = 0;
-
-        for (int i = 0; i <= n; i++) {
-            int temp = 1/(x + i);
-            sum1 += 1/(x+ i);
-        }
-        System.out.println(sum1);
-
-        for (int i = 0; i <= n; i++) {
-            sum2 += x*x*x*x;
-        }
-    }
-
-    public static void task15() {
-        System.out.println("\nTask 15");
-    }
+//    public static void task13() {
+//        System.out.println("\nTask 13");
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("Input n:");
+//        int n = scanner.nextInt();
+//        int sum = 0;
+//
+//        for (int i = 0; i <= n; i++) {
+//            sum += (1 + 1 / (n * n));
+//        }
+//        System.out.println(sum);
+//    }
+//
+//    public static void task14() {
+//        System.out.println("\nTask 14");
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("Input n:");
+//        int n = scanner.nextInt();
+//        System.out.println("Input x:");
+//        int x = scanner.nextInt();
+//        double sum1 = (double) 1/x;
+//        int sum2 = x;
+//
+//        for (int i = 1; i <= n; i++) {
+//            double temp = 1.00;
+//            temp *= (double) 1/(x + i);
+//            sum1 += temp*(1/x);
+//        }
+//        System.out.println(sum1);
+//
+//        for (int i = 2; i <= n; i++) {
+//            double temp = 1;
+//            temp *= (double) x /i;
+//            sum2 += temp;
+//        }
+//        System.out.println(sum2);
+//    }
+//
+//    public static void task15() {
+//        System.out.println("\nTask 15"); Scanner scanner = new Scanner(System.in);
+//        System.out.println("Input n:");
+//        int n = scanner.nextInt();
+//
+//        double multiplication1 = 1;
+//
+//        for (int i = 1; i <= n; i++) {
+//            double temp = 1;
+//            temp += 1/i;
+//            multiplication1 *= (2 + temp);
+//        }
+//        System.out.println(multiplication1);
+//
+//        double multiplication2 = 1;
+//        for (int i = 0; i <= n; i++) {
+//            double temp = 1;
+//            temp += 1/i;
+//            multiplication2 *= (1 + i)*temp;
+//        }
+//        System.out.println(multiplication2);
+//    }
 
     public static void task16() {
         System.out.println("\nTask 16");
+
+        double sum = 1;
+
+        for (int i = 2; i <= 1000000; i++) {
+            sum += (double) 1 / (i * i);
+        }
+        System.out.println(sum);
+
+        double sum2 = 1/3 + 1/8;
+
+        for (int i = 2; i <= 1000000; i++) {
+            sum2 = 1 / ((i + 2) * (i + 4));
+        }
+        System.out.println(sum2);
+
+
     }
 
     public static void task17() {
