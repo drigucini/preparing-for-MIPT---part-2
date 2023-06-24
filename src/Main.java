@@ -164,10 +164,34 @@ public class Main {
 
     public static void task9() {
         System.out.println("\nTask 9");
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Input n:");
+        int n = scanner.nextInt();
+        String number = Integer.toString(n);
+
+        int result = 0;
+        for (int i = 0; i < number.length(); i++) {
+            int s = number.charAt(i);
+            if (s % 2 != 0) {
+                result++;
+            }
+        }
+        System.out.println(result);
     }
 
     public static void task10() {
         System.out.println("\nTask 10");
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Input n:");
+        int n = scanner.nextInt();
+        char[] num = String.valueOf(n).toCharArray();
+        System.out.println(num);
+
+        char[] result = new char[num.length];
+        for (int i = num.length - 1; i >= 0; i--) {
+            result[num.length - i - 1] = num[i];
+        }
+        System.out.println(result);
     }
 
     public static void task11() {
