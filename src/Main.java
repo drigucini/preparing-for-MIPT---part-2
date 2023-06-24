@@ -208,7 +208,6 @@ public class Main {
         System.out.println("Input n:");
         int n = scanner.nextInt();
         int sum = 0;
-
         for (int i = 0; i <= n; i++) {
             sum += (1 + 1 / (n * n));
         }
@@ -228,11 +227,13 @@ public class Main {
         for (int i = 0; i <= n; i++) {
             int temp = 1/(x + i);
             sum1 += 1/(x+ i);
+
         }
         System.out.println(sum1);
 
         for (int i = 0; i <= n; i++) {
             sum2 += x*x*x*x;
+
         }
     }
 
