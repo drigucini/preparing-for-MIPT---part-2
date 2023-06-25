@@ -13,8 +13,8 @@ public class Main {
 //        task6();
 //        task7();
         task8();
-        task9();
-        task10();
+//        task9();
+//        task10();
         task11();
         task12();
         task13();
@@ -162,44 +162,74 @@ public class Main {
         System.out.println("\nTask 8");
     }
 
-    public static void task9() {
-        System.out.println("\nTask 9");
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Input n:");
-        int n = scanner.nextInt();
-        String number = Integer.toString(n);
-
-        int result = 0;
-        for (int i = 0; i < number.length(); i++) {
-            int s = number.charAt(i);
-            if (s % 2 != 0) {
-                result++;
-            }
-        }
-        System.out.println(result);
-    }
-
-    public static void task10() {
-        System.out.println("\nTask 10");
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Input n:");
-        int n = scanner.nextInt();
-        char[] num = String.valueOf(n).toCharArray();
-        System.out.println(num);
-
-        char[] result = new char[num.length];
-        for (int i = num.length - 1; i >= 0; i--) {
-            result[num.length - i - 1] = num[i];
-        }
-        System.out.println(result);
-    }
+//    public static void task9() {
+//        System.out.println("\nTask 9");
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("Input n:");
+//        int n = scanner.nextInt();
+//        String number = Integer.toString(n);
+//
+//        int result = 0;
+//        for (int i = 0; i < number.length(); i++) {
+//            int s = number.charAt(i);
+//            if (s % 2 != 0) {
+//                result++;
+//            }
+//        }
+//        System.out.println(result);
+//    }
+//
+//    public static void task10() {
+//        System.out.println("\nTask 10");
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("Input n:");
+//        int n = scanner.nextInt();
+//        char[] num = String.valueOf(n).toCharArray();
+//        System.out.println(num);
+//
+//        char[] result = new char[num.length];
+//        for (int i = num.length - 1; i >= 0; i--) {
+//            result[num.length - i - 1] = num[i];
+//        }
+//        System.out.println(result);
+//    }
 
     public static void task11() {
         System.out.println("\nTask 11");
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Input n: ");
+        int n = scanner.nextInt();
+
+
+        for (int i = 1; i <= n; i++) {
+            if (checkNumber(i)) {
+                System.out.print(i + " ");
+            }
+        }
+    }
+    private static boolean checkNumber(int n) {
+        char[] num = String.valueOf(n).toCharArray();
+        int sumEven = 0;
+        int sumUneven = 0;
+        for (char c : num) {
+            if (c % 2 == 0) {
+                sumEven += c;
+            } else {
+                sumUneven += c;
+            }
+        }
+        return sumEven > sumUneven;
     }
 
     public static void task12() {
         System.out.println("\nTask 12");
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Input number 1:");
+        int number1 = scanner.nextInt();
+        System.out.println("Input number 2:");
+        int number2 = scanner.nextInt();
+
+
     }
 
     public static void task13() {
